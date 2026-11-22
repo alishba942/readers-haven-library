@@ -1,160 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@media (max-width: 600px) {
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f3ef;
-    color: #222;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.header {
-    background: #ffffff;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #254d3c;
-    font-size: 28px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 25px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #477a5c;
-}
-
-.hero {
-    background: #254d3c;
-    color: white;
-    padding: 100px 0;
-}
-
-.hero-tag {
-    letter-spacing: 3px;
-    color: #c5ddc9;
-    margin-bottom: 20px;
-}
-
-.hero h2 {
-    font-size: 55px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
-.hero p {
-    max-width: 600px;
-    margin-bottom: 25px;
-}
-
-.hero-buttons {
-    margin-top: 30px;
-}
-
-.btn {
-    display: inline-block;
-    background: #d9b77c;
-    color: #222;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.btn-outline {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-}
-
-.welcome {
-    text-align: center;
-    padding: 70px 0;
-}
-
-.welcome h2 {
-    font-size: 35px;
-    color: #254d3c;
-    margin-bottom: 20px;
-}
-
-.welcome p {
-    max-width: 750px;
-    margin: auto;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding-bottom: 80px;
-}
-
-.feature-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.feature-card h3 {
-    color: #254d3c;
-    margin-bottom: 15px;
-}
-
-.feature-card a {
-    display: inline-block;
-    margin-top: 20px;
-    color: #477a5c;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.footer {
-    background: #18352a;
-    color: white;
-    padding: 25px 0;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
+    .services-hero {
+        padding: 60px 0;
     }
 
-    nav a {
-        margin: 5px;
-        display: inline-block;
+    .services-section,
+    .services-how {
+        padding: 55px 0;
     }
 
-    .hero h2 {
-        font-size: 38px;
-    }
-
-    .features {
+    .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .services-nav {
+        gap: 12px;
+    }
+
+    .services-nav a {
+        font-size: 0.9rem;
+    }
+
+    .service-card {
+        padding: 24px;
+    }
+
+    .services-cta {
+        padding: 55px 0;
     }
 }
 
