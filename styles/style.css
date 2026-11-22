@@ -1,268 +1,3 @@
-
-/* ================================
-   READERS' HAVEN - SERVICES PAGE
-================================ */
-
-.services-container {
-    width: min(1120px, 90%);
-    margin: 0 auto;
-}
-
-/* Header */
-
-.services-header {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.services-header .services-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-    padding: 20px 0;
-}
-
-.services-logo {
-    color: #172554;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.services-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-}
-
-.services-nav a {
-    color: #374151;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.2s ease;
-}
-
-.services-nav a:hover,
-.services-nav a.active {
-    color: #0284c7;
-}
-
-/* Hero */
-
-.services-hero {
-    padding: 90px 0;
-    text-align: center;
-    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
-}
-
-.services-tag {
-    display: inline-block;
-    padding: 8px 14px;
-    border-radius: 30px;
-    background: #e0f2fe;
-    color: #0369a1;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
-.services-hero h1 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    line-height: 1.15;
-    color: #0f172a;
-    margin: 0 0 20px;
-}
-
-.services-hero p {
-    max-width: 650px;
-    margin: 0 auto 30px;
-    color: #475569;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-/* Buttons */
-
-.services-button {
-    display: inline-block;
-    padding: 13px 25px;
-    border-radius: 8px;
-    background: #0284c7;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.services-button:hover {
-    background: #0369a1;
-    transform: translateY(-2px);
-}
-
-/* Services section */
-
-.services-section {
-    padding: 80px 0;
-    background: #ffffff;
-}
-
-.services-section-heading {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 45px;
-}
-
-.services-section-heading h2 {
-    color: #0f172a;
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    margin: 0 0 15px;
-}
-
-.services-section-heading p {
-    color: #64748b;
-    line-height: 1.7;
-}
-
-/* Cards */
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.service-card {
-    padding: 30px;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    background: #ffffff;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-}
-
-.service-icon {
-    font-size: 2.3rem;
-    margin-bottom: 18px;
-}
-
-.service-card h3 {
-    color: #0f172a;
-    margin: 0 0 12px;
-    font-size: 1.25rem;
-}
-
-.service-card p {
-    color: #64748b;
-    line-height: 1.75;
-    margin-bottom: 20px;
-}
-
-.service-detail {
-    display: inline-block;
-    padding: 7px 12px;
-    background: #f0f9ff;
-    color: #0369a1;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-/* How to access */
-
-.services-how {
-    padding: 80px 0;
-    background: #f8fafc;
-}
-
-.services-steps {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-}
-
-.services-step {
-    padding: 28px;
-    background: #ffffff;
-    border-radius: 14px;
-    border: 1px solid #e2e8f0;
-}
-
-.step-number {
-    display: inline-block;
-    color: #0284c7;
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.services-step h3 {
-    color: #0f172a;
-    margin-bottom: 12px;
-}
-
-.services-step p {
-    color: #64748b;
-    line-height: 1.7;
-}
-
-/* Call to action */
-
-.services-cta {
-    padding: 75px 0;
-    background: #0f172a;
-    text-align: center;
-}
-
-.services-cta h2 {
-    color: #ffffff;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    margin-bottom: 15px;
-}
-
-.services-cta p {
-    color: #cbd5e1;
-    margin-bottom: 25px;
-}
-
-/* Footer */
-
-.services-footer {
-    background: #020617;
-    padding: 22px 0;
-    text-align: center;
-}
-
-.services-footer p {
-    color: #94a3b8;
-    margin: 0;
-}
-
-/* Responsive Design */
-
-@media (max-width: 900px) {
-
-    .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .services-steps {
-        grid-template-columns: 1fr;
-    }
-
-    .services-header .services-container {
-        flex-direction: column;
-    }
-
-    .services-nav {
-        justify-content: center;
-    }
-}
-
 @media (max-width: 600px) {
 
     .services-hero {
@@ -292,5 +27,219 @@
 
     .services-cta {
         padding: 55px 0;
+    }
+}
+
+
+/* ================================
+   MEMBERSHIP PAGE
+================================ */
+
+.membership-hero {
+    background: #254d3c;
+    color: white;
+    padding: 90px 0;
+}
+
+.membership-hero h2 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.membership-hero p:not(.hero-tag) {
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+/* Membership Benefits */
+
+.membership-benefits {
+    padding: 80px 0;
+}
+
+.membership-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.membership-heading h2 {
+    color: #254d3c;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.membership-heading > p:last-child {
+    color: #666;
+}
+
+.membership-label {
+    color: #477a5c;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card h3 {
+    color: #254d3c;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #666;
+}
+
+/* Membership Plans */
+
+.membership-plans {
+    background: #ebe8e1;
+    padding: 80px 0;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.plan-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 12px;
+    position: relative;
+    border: 1px solid #e3e3e3;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card h3 {
+    color: #254d3c;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.plan-description {
+    color: #777;
+    min-height: 48px;
+}
+
+.plan-price {
+    margin: 25px 0;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: bold;
+    color: #254d3c;
+}
+
+.price-period {
+    color: #777;
+}
+
+.plan-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plan-card li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.plan-card li::before {
+    content: "✓ ";
+    color: #477a5c;
+    font-weight: bold;
+}
+
+.plan-btn {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    background: #254d3c;
+    color: white;
+    padding: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.plan-btn:hover {
+    background: #477a5c;
+}
+
+/* Featured Plan */
+
+.featured-plan {
+    border: 2px solid #d9b77c;
+    transform: translateY(-10px);
+}
+
+.plan-badge {
+    background: #d9b77c;
+    color: #222;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+/* Membership CTA */
+
+.membership-cta {
+    background: #254d3c;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.membership-cta h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.membership-cta p {
+    margin-bottom: 25px;
+}
+
+/* Responsive Membership Layout */
+
+@media (max-width: 768px) {
+    .membership-hero h2 {
+        font-size: 38px;
+    }
+
+    .benefits-grid,
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-plan {
+        transform: none;
+    }
+
+    .membership-heading h2,
+    .membership-cta h2 {
+        font-size: 28px;
     }
 }
